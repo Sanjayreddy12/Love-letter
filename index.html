@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+</head>
+<body>
+  <div class="envelope" id="envelope" onclick="openEnvelope()">
+    <img src="envelope.png" alt="Envelope" class="envelope-img">
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="message">
+      <h1 class="love-letter">My Love,</h1>
+      <p class="love-letter">You make every moment special.</p>
+      <p class="love-letter">I love you more than words can express.</p>
+      <p class="love-letter">Forever and always,</p>
+      <p class="love-letter">Your Beloved</p>
+    </div>
+  </div>
+
+  <!-- Add a div to contain the heart shapes -->
+  <div id="heart-container"></div>
+
+  <audio id="bgm" loop>
+    <source src="love_theme.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+  }
+  
+  .envelope {
+    position: relative;
+    width: 500px; /* adjusted size */
+    cursor: pointer;
+  }
+  
+  .envelope-img {
+    width: 100%;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* adjusted size */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .popup.show {
+    display: block;
+  }
+  
+  .message {
+    color: crimson;
+  }
+  
+  .love-letter {
+    font-family: 'Great Vibes', cursive; /* Use Great Vibes font */
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  /* Heart animation */
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: heartAnimation 2s ease-out;
+  }
+  
+  @keyframes heartAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  
